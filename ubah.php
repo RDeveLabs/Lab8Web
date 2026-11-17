@@ -59,8 +59,7 @@ function is_select($var, $val) {
     <div class="container">
         <h1>Ubah Barang</h1>
         <div class="main">
-            <form method="post" action="ubah.php" enctype="multipart/form-
-data">
+            <form method="post" action="ubah.php?id=<?= urlencode($data['id_barang']); ?>" enctype="multipart/form-data">
                 <div class="input">
                     <label>Nama Barang</label>
                     <input type="text" name="nama" value="<?php echo $data['nama']; ?>">
